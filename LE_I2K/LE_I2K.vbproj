@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{CB0FA419-7692-4617-999E-AC25663C66D5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>LE_I2K</RootNamespace>
+    <AssemblyName>LE_I2K</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>LE_I2K.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>LE_I2K.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.html" />
+    <Content Include="Contact.html" />
+    <Content Include="css\blank.gif" />
+    <Content Include="css\fancybox_buttons.png" />
+    <Content Include="css\fancybox_loading%402x.gif" />
+    <Content Include="css\fancybox_loading.gif" />
+    <Content Include="css\fancybox_overlay.png" />
+    <Content Include="css\fancybox_sprite%402x.png" />
+    <Content Include="css\fancybox_sprite.png" />
+    <Content Include="css\fucking-ie-8-and-lower.css" />
+    <Content Include="css\jquery.fancybox-buttons.css" />
+    <Content Include="css\jquery.fancybox-buttons.js" />
+    <Content Include="css\jquery.fancybox-media.js" />
+    <Content Include="css\jquery.fancybox-thumbs.css" />
+    <Content Include="css\jquery.fancybox-thumbs.js" />
+    <Content Include="css\jquery.fancybox.css" />
+    <Content Include="css\media.css" />
+    <Content Include="css\style.css" />
+    <Content Include="Engine.asmx" />
+    <Content Include="favicon.ico" />
+    <Content Include="img\ArizonaShowerDoor.png" />
+    <Content Include="img\demo-images\about.jpg" />
+    <Content Include="img\demo-images\authors\single-author.jpg" />
+    <Content Include="img\demo-images\authors\single-author2.jpg" />
+    <Content Include="img\demo-images\authors\single-author3.jpg" />
+    <Content Include="img\demo-images\clients\client.jpg" />
+    <Content Include="img\demo-images\clients\client10.jpg" />
+    <Content Include="img\demo-images\clients\client11.jpg" />
+    <Content Include="img\demo-images\clients\client12.jpg" />
+    <Content Include="img\demo-images\clients\client2.jpg" />
+    <Content Include="img\demo-images\clients\client3.jpg" />
+    <Content Include="img\demo-images\clients\client4.jpg" />
+    <Content Include="img\demo-images\clients\client5.jpg" />
+    <Content Include="img\demo-images\clients\client6.jpg" />
+    <Content Include="img\demo-images\clients\client7.jpg" />
+    <Content Include="img\demo-images\clients\client8.jpg" />
+    <Content Include="img\demo-images\clients\client9.jpg" />
+    <Content Include="img\demo-images\parallax-bg.jpg" />
+    <Content Include="img\demo-images\parallax-bg1.jpg" />
+    <Content Include="img\demo-images\parallax-one.jpg" />
+    <Content Include="img\demo-images\parallax-one22.jpg" />
+    <Content Include="img\demo-images\partners\01.png" />
+    <Content Include="img\demo-images\partners\02.png" />
+    <Content Include="img\demo-images\partners\03.png" />
+    <Content Include="img\demo-images\partners\04.png" />
+    <Content Include="img\demo-images\partners\05.png" />
+    <Content Include="img\demo-images\partners\06.png" />
+    <Content Include="img\demo-images\partners\07.png" />
+    <Content Include="img\demo-images\partners\08.png" />
+    <Content Include="img\demo-images\partners\09.png" />
+    <Content Include="img\demo-images\partners\MockIcon.png" />
+    <Content Include="img\demo-images\portfolio\full\01.jpg" />
+    <Content Include="img\demo-images\portfolio\full\02.jpg" />
+    <Content Include="img\demo-images\portfolio\full\03.jpg" />
+    <Content Include="img\demo-images\portfolio\full\04.jpg" />
+    <Content Include="img\demo-images\portfolio\full\05.jpg" />
+    <Content Include="img\demo-images\portfolio\full\06.jpg" />
+    <Content Include="img\demo-images\portfolio\full\07.jpg" />
+    <Content Include="img\demo-images\portfolio\full\08.jpg" />
+    <Content Include="img\demo-images\portfolio\full\09.jpg" />
+    <Content Include="img\demo-images\portfolio\full\10.jpg" />
+    <Content Include="img\demo-images\portfolio\full\11.jpg" />
+    <Content Include="img\demo-images\portfolio\full\12.jpg" />
+    <Content Include="img\demo-images\portfolio\thumb\01.jpg" />
+    <Content Include="img\demo-images\portfolio\thumb\02.jpg" />
+    <Content Include="img\demo-images\portfolio\thumb\03.jpg" />
+    <Content Include="img\demo-images\portfolio\thumb\04.jpg" />
+    <Content Include="img\demo-images\portfolio\thumb\05.jpg" />
+    <Content Include="img\demo-images\portfolio\thumb\06.jpg" />
+    <Content Include="img\demo-images\portfolio\thumb\07.jpg" />
+    <Content Include="img\demo-images\portfolio\thumb\08.jpg" />
+    <Content Include="img\demo-images\portfolio\thumb\09.jpg" />
+    <Content Include="img\demo-images\portfolio\thumb\10.jpg" />
+    <Content Include="img\demo-images\portfolio\thumb\11.jpg" />
+    <Content Include="img\demo-images\portfolio\thumb\12.jpg" />
+    <Content Include="img\INTERIOR 2000 PROOF 4.jpg" />
+    <Content Include="img\Interior2kLogo.png" />
+    <Content Include="img\Interior2kLogo_LG.png" />
+    <Content Include="img\Interior2kLogo_SM.png" />
+    <Content Include="img\Interior2kLogo_TEXT.png" />
+    <Content Include="img\Interior2k_Tasks2.png" />
+    <Content Include="img\LE_Interior2000_HeaderImage2.png" />
+    <Content Include="img\LE_Interior2000_HeaderImageV1.png" />
+    <Content Include="img\LE_Interior2000_HeaderImagev3.png" />
+    <Content Include="img\LE_Interior2000_IdeaforProject.png" />
+    <Content Include="img\LE_Interior2000_IdeaforProject2.png" />
+    <Content Include="img\LE_Interior2000_IdeaforProject3.png" />
+    <Content Include="img\LE_Interior2000_ServiceIcons_Fireplace.png" />
+    <Content Include="img\LE_ShowerEnclosure.png" />
+    <Content Include="img\marker.png" />
+    <Content Include="img\Moen.png" />
+    <Content Include="img\Partners\Alumax.jpg" />
+    <Content Include="img\Partners\astria-logo-r-b336b3dd0da56a830b052ef4f9ce23c9.png" />
+    <Content Include="img\Partners\better-home-products.png" />
+    <Content Include="img\Partners\EMTEK-Logo.gif" />
+    <Content Include="img\Partners\FMI_PRODUCTS2.jpg" />
+    <Content Include="img\Partners\GregoryWood.jpg" />
+    <Content Include="img\Partners\Lennox.jpg" />
+    <Content Include="img\Partners\logo_alumax22.gif" />
+    <Content Include="img\Partners\mantelcraft_logo_white_on_black_1410386332__88599.png" />
+    <Content Include="img\Partners\Rubbermaid_logo.png" />
+    <Content Include="img\Partners\Schlage.gif" />
+    <Content Include="img\Partners\SplendorLogo_Grey_NoWords_236x110.png" />
+    <Content Include="img\PearlMantels.jpg" />
+    <Content Include="img\pearlmantels.png" />
+    <Content Include="img\plus.png" />
+    <Content Include="img\Service Icos\BathHardwareIcon.png" />
+    <Content Include="img\Service Icos\CompleteBathRenovationIcon.png" />
+    <Content Include="img\Service Icos\LogFireIcon.png" />
+    <Content Include="img\Service Icos\MirrosIcon.png" />
+    <Content Include="img\Service Icos\Reno2.png" />
+    <Content Include="img\Service Icos\ShowerIcon2.png" />
+    <Content Include="img\Service Icos\StorageIcon.png" />
+    <Content Include="img\Untitled-122.png" />
+    <Content Include="includes\bootstrap\css\bootstrap.min.css" />
+    <Content Include="includes\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="includes\bootstrap\js\bootstrap.min.js" />
+    <Content Include="includes\contact-form\app.js" />
+    <Content Include="includes\contact-form\validatr.js" />
+    <Content Include="includes\font-awesome-4.2.0\css\font-awesome.min.css" />
+    <Content Include="includes\font-awesome-4.2.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="includes\litebox\images-loaded.min.js" />
+    <Content Include="includes\litebox\litebox-close.png" />
+    <Content Include="includes\litebox\litebox-next.png" />
+    <Content Include="includes\litebox\litebox-prev.png" />
+    <Content Include="includes\litebox\litebox.css" />
+    <Content Include="includes\litebox\litebox.min.js" />
+    <Content Include="includes\owl-carousel\AjaxLoader.gif" />
+    <Content Include="includes\owl-carousel\grabbing.png" />
+    <Content Include="includes\owl-carousel\owl.carousel.css" />
+    <Content Include="includes\owl-carousel\owl.carousel.min.js" />
+    <Content Include="includes\wow-js\animations.css" />
+    <Content Include="includes\wow-js\wow.min.js" />
+    <Content Include="index.html" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\ie-opacity-polyfill.js" />
+    <Content Include="js\instafeed.min.js" />
+    <Content Include="js\isotope.pkgd.min.js" />
+    <Content Include="js\jquery.counterup.min.js" />
+    <Content Include="js\jquery.easing.1.3.min.js" />
+    <Content Include="js\jquery.fancybox.js" />
+    <Content Include="js\jquery.fancybox.pack.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.nav.js" />
+    <Content Include="js\jquery.nicescroll.min.js" />
+    <Content Include="js\jquery.scrolly.js" />
+    <Content Include="js\jquery.sticky.js" />
+    <Content Include="Partners.html" />
+    <Content Include="Portfolio.html" />
+    <Content Include="Services.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Engine.asmx.vb">
+      <DependentUpon>Engine.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="includes\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="includes\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="includes\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="includes\contact-form\mailer.php" />
+    <Content Include="includes\font-awesome-4.2.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="includes\font-awesome-4.2.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="includes\font-awesome-4.2.0\fonts\fontawesome-webfont.woff" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\interior2kva.com - Web Deploy.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57262</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57262/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
