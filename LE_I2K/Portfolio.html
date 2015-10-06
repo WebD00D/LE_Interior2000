@@ -86,7 +86,7 @@
                             View our portfolio here or check us out on
                             <a href="https://instagram.com/interior2kva">Instagram!</a>
                         </h3>
-                        <a id="ViewAll" href="#" class="btn btn-info">View All</a>
+                        <!--<a id="ViewAll" href="#" class="btn btn-info">View All</a>-->
                         <a id="Shower" href="#" class="btn btn-default">Shower</a>
                         <a id="Fireplace" href="#" class="btn btn-default">Fireplace</a>
                         <a id="Mirrors" href="#" class="btn btn-default">Mirrors</a>
@@ -208,28 +208,28 @@
                 limit: 9,
                 sortBy: 'most-recent',
                 resolution: 'standard_resolution',
-                tagName: 'i2kva'
+                tagName: 'i2kshowers'
                 
             });
             userFeed.run();
 
-            $("#ViewAll").click(function () {
-                $("#instafeed").empty();
-                var userFeed = new Instafeed({
-                    get: 'tagged',
-                    userId: 1962086059,
-                    template: '   <a href="{{image}}" rel="group"  class="fancybox col-lg-4"><img style="margin-top:15px;margin-bottom:15px"  class="img-responsive center-block " src="{{image}}" /> </a> ',
+            //$("#ViewAll").click(function () {
+            //    $("#instafeed").empty();
+            //    var userFeed = new Instafeed({
+            //        get: 'tagged',
+            //        userId: 1962086059,
+            //        template: '   <a href="{{image}}" rel="group"  class="fancybox col-lg-4"><img style="margin-top:15px;margin-bottom:15px"  class="img-responsive center-block " src="{{image}}" /> </a> ',
 
-                    accessToken: '1962086059.467ede5.fb2b10bc578d49929330a66aa04bb01e',
-                    limit: 9,
-                    sortBy: 'most-recent',
-                    resolution: 'standard_resolution',
-                    tagName: 'i2kva'
+            //        accessToken: '1962086059.467ede5.fb2b10bc578d49929330a66aa04bb01e',
+            //        limit: 9,
+            //        sortBy: 'most-recent',
+            //        resolution: 'standard_resolution',
+            //        tagName: 'i2kva'
 
-                });
-                userFeed.run();
+            //    });
+            //    userFeed.run();
 
-            })
+            //})
 
 
             $("#Shower").click(function () {
